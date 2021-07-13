@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+.container{
+    height: 100vh;
+    background-color: #E5E7E9;
+}
+.header{
+    margin-bottom: 50px;
+}
+.head{
+    margin-top: 20px;
+    color: #D94C3E;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content{
+    height: 400px;
+}
+
+.left-content{
+    border-right: solid 2px #D94C3E;
+}
+.list-group li{
+    margin: 5px;
+}
+h4{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* ----------Card style -----------*/
+.card-display{
+    margin-bottom: 10px;
+}
+.card-body{
+    
+    border-radius: 5px;
+}
+.box-color{
+    background-color: #EFF5E2;
+}
+.updateData{
+    font-family: 'Lora', serif;
+    font-size: 15px;
+}
+.data-title{
+    
+}
