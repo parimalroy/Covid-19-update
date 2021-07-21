@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/covid-19-update/static/css/main.3525fd7d.chunk.css",
-    "main.js": "/covid-19-update/static/js/main.a9998023.chunk.js",
-    "main.js.map": "/covid-19-update/static/js/main.a9998023.chunk.js.map",
-    "runtime-main.js": "/covid-19-update/static/js/runtime-main.3e6ad6b3.js",
-    "runtime-main.js.map": "/covid-19-update/static/js/runtime-main.3e6ad6b3.js.map",
+    "main.css": "/covid-19-update/static/css/main.13f33e97.chunk.css",
+    "main.js": "/covid-19-update/static/js/main.0256df20.chunk.js",
+    "main.js.map": "/covid-19-update/static/js/main.0256df20.chunk.js.map",
+    "runtime-main.js": "/covid-19-update/static/js/runtime-main.2329f422.js",
+    "runtime-main.js.map": "/covid-19-update/static/js/runtime-main.2329f422.js.map",
     "static/css/2.fb17aa6d.chunk.css": "/covid-19-update/static/css/2.fb17aa6d.chunk.css",
-    "static/js/2.83eb81a4.chunk.js": "/covid-19-update/static/js/2.83eb81a4.chunk.js",
-    "static/js/2.83eb81a4.chunk.js.map": "/covid-19-update/static/js/2.83eb81a4.chunk.js.map",
-    "static/js/3.3efb2532.chunk.js": "/covid-19-update/static/js/3.3efb2532.chunk.js",
-    "static/js/3.3efb2532.chunk.js.map": "/covid-19-update/static/js/3.3efb2532.chunk.js.map",
+    "static/js/2.6268b8a5.chunk.js": "/covid-19-update/static/js/2.6268b8a5.chunk.js",
+    "static/js/2.6268b8a5.chunk.js.map": "/covid-19-update/static/js/2.6268b8a5.chunk.js.map",
+    "static/js/3.d50dfddd.chunk.js": "/covid-19-update/static/js/3.d50dfddd.chunk.js",
+    "static/js/3.d50dfddd.chunk.js.map": "/covid-19-update/static/js/3.d50dfddd.chunk.js.map",
     "index.html": "/covid-19-update/index.html",
     "static/css/2.fb17aa6d.chunk.css.map": "/covid-19-update/static/css/2.fb17aa6d.chunk.css.map",
-    "static/css/main.3525fd7d.chunk.css.map": "/covid-19-update/static/css/main.3525fd7d.chunk.css.map",
-    "static/js/2.83eb81a4.chunk.js.LICENSE.txt": "/covid-19-update/static/js/2.83eb81a4.chunk.js.LICENSE.txt"
+    "static/css/main.13f33e97.chunk.css.map": "/covid-19-update/static/css/main.13f33e97.chunk.css.map",
+    "static/js/2.6268b8a5.chunk.js.LICENSE.txt": "/covid-19-update/static/js/2.6268b8a5.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.3e6ad6b3.js",
+    "static/js/runtime-main.2329f422.js",
     "static/css/2.fb17aa6d.chunk.css",
-    "static/js/2.83eb81a4.chunk.js",
-    "static/css/main.3525fd7d.chunk.css",
-    "static/js/main.a9998023.chunk.js"
+    "static/js/2.6268b8a5.chunk.js",
+    "static/css/main.13f33e97.chunk.css",
+    "static/js/main.0256df20.chunk.js"
   ]
 }
