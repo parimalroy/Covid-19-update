@@ -1,49 +1,81 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 
-.container{
-    height: 100vh;
-    background-color: #E5E7E9;
+.container {
+  min-height: 100vh;
+  max-height: auto;
+  background-color: #355B6B;
 }
-.header{
-    margin-bottom: 50px;
+.header {
+  margin-bottom: 50px;
 }
-.head{
-    margin-top: 20px;
-    color: #D94C3E;
-    font-family: 'Roboto', sans-serif;
-}
-
-.content{
-    height: 400px;
+.head {
+  margin-top: 20px;
+  color: #d94c3e;
+  font-family: "Roboto", sans-serif;
 }
 
-.left-content{
-    border-right: solid 2px #D94C3E;
-}
-.list-group li{
-    margin: 5px;
-}
-h4{
-    font-family: 'Roboto', sans-serif;
+.content {
+  height: 400px;
 }
 
-
+.left-content {
+  border-right: solid 2px #EFCB84;
+}
+.list-group li {
+  margin: 5px;
+}
+.card{
+  background-color: #C6CCC3;
+}
+.list-group-item{
+  background-color:#C6CCC3 ;
+}
+h4 {
+  font-family: "Lora", serif;
+  color: #ffffff;
+}
+hr{
+  color: #EFCB84;
+  height: 10px;
+}
 /* ----------Card style -----------*/
-.card-display{
-    margin-bottom: 10px;
+.card-display {
+  margin-bottom: 10px;
 }
-.card-body{
-    
-    border-radius: 5px;
+.card-body {
+  border-radius: 5px;
 }
-.box-color{
-    background-color: #EFF5E2;
+.box-color {
+  background-color: #C6CCC3;
 }
-.updateData{
-    font-family: 'Lora', serif;
-    font-size: 15px;
+.updateData {
+  font-family: "Lora", serif;
+  font-size: 15px;
 }
-.data-title{
-    
+.list-group-item {
+  font-family: "Lora", serif;
+}
+/* Navbar */
+
+.brand {
+  font-family: "Lora", serif;
+}
+.brand span {
+  font-family: "Courgette", cursive;
+  font-size: 15px;
+}
+.navItem {
+  color: #d94c3e;
+  margin-left: auto;
+  padding: 10px;
+}
+.NavItem {
+  border-bottom: solid 2px #EFCB84;
+}
+
+.activeNav{
+  color: cadetblue;
+  border-bottom: white 1px solid;
 }
