@@ -10,8 +10,7 @@ const Asia = (props) => {
   useEffect(() => {
     getCovidData(asiaCountry, setWorldData);
   }, []);
- //console.log(worldData);
-// console.log(setWorldData)
+
   return (
     <>
       <div className="row justify-content-center">
