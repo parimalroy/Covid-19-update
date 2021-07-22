@@ -3,8 +3,8 @@ import "./../layout.css";
 import ContinentCard from './ContinentCard';
 import { getCovidData } from "./CovidData";
 
-const asiaCountry =['India','Nepal','China','Pakistan','Singapore','Sri Lanka']
-const Asia = (props) => {
+const asiaCountry =['Italy','Germany','France','Austria','Finland','Denmark']
+const Europe = (props) => {
   let myFormat = Intl.NumberFormat("en-US");
   const [worldData, setWorldData] = useState([]);
   useEffect(() => {
@@ -15,10 +15,11 @@ const Asia = (props) => {
   return (
     <>
       <div className="row justify-content-center">
-        <h4 className="text-center m-4">Asia Covid-19 Cases:</h4> <hr />
+        <h4 className="text-center m-4"> Europe Covid-19 Cases: </h4> <hr />
         <div className="row justify-content-center">
         {
         worldData.map((items,index )=> {
+          //console.log(worldData);
           return (
             <ContinentCard
               key={index}
@@ -40,4 +41,4 @@ const Asia = (props) => {
     </>
   );
 };
-export default Asia;
+export default Europe;

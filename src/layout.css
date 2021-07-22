@@ -3,7 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 
 .container {
-  min-height: 100vh;
   max-height: auto;
   background-color: #355B6B;
 }
@@ -17,7 +16,7 @@
 }
 
 .content {
-  height: 400px;
+  height: auto;
 }
 
 .left-content {
@@ -74,8 +73,14 @@ hr{
 .NavItem {
   border-bottom: solid 2px #EFCB84;
 }
-
+a{
+  color:white;
+  text-decoration: none;
+}
+a:hover{
+  color: #EFCB84;
+}
 .activeNav{
-  color: cadetblue;
-  border-bottom: white 1px solid;
+  color: white;
+  border-bottom: #EFCB84 2px dotted;
 }
