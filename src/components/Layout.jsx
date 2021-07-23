@@ -38,8 +38,8 @@ const Layout = (props) => {
             <h4>World Covid-19 Cases:</h4> <hr />
             <div className="card">
               <div className="card-header ">
-                Total Cases:
-                 <span className="text-success updateData">
+                Total Cases: 
+                  <span className="text-success updateData">
                    {myFormat.format(data.cases)}
                 </span>
               </div>

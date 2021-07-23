@@ -18,8 +18,7 @@ const getCovidData = async (data,setBdDatas) => {
       }
       });
 
-    //return allItem;
-    //console.log(newData)
+  
   } catch (err) {
     console.log(err);
   }
@@ -55,7 +54,7 @@ const CovidData = (props) => {
         Recovered={myFormat.format(bdData[0].recovered)}
         TotalTests={myFormat.format(bdData[0].totalTests)}
       />
-      )
+      
     </>
   );
 };
