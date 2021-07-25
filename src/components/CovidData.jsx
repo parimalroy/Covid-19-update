@@ -1,24 +1,26 @@
 import React, { useEffect, useState } from "react";
+import { Spinner } from "react-bootstrap";
+import "./../layout.css";
 import Layout from "./Layout";
-const getCovidData = async (data,setBdDatas) => {
+
+const getCovidData = async (data,setBdDatas,setLoading) => {
   try {
     let allItem = [];
     let response = await fetch(
       "https://coronavirus-19-api.herokuapp.com/countries"
     );
     let result = await response.json();
-    // return result
     result.find((item) => {
        for (let i=0; i<=data.length; i++) {
         if(item.country == data[i]) {
           allItem.push(item)
           setBdDatas([...allItem])
-          //console.log(allItem)
+                 
         }
       }
       });
 
-  
+  setLoading(true)
   } catch (err) {
     console.log(err);
   }
@@ -29,14 +31,15 @@ const CovidData = (props) => {
 
   let myFormat = Intl.NumberFormat("en-US");
   const [bdData, setBdData] = useState(['Bangladesh']);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    getCovidData(bdData,setBdData);
-   // getCovidData();
+    getCovidData(bdData,setBdData,setLoading);
   }, []);
-  console.log(bdData[0].country);
+ // console.log(bdData[0].country);
   return (
     <>
+    {loading? 
       <Layout
         TodayCase={
           bdData[0].todayCases == 0
@@ -53,7 +56,9 @@ const CovidData = (props) => {
         Active={myFormat.format(bdData[0].active)}
         Recovered={myFormat.format(bdData[0].recovered)}
         TotalTests={myFormat.format(bdData[0].totalTests)}
-      />
+      />:
+      <div className="text-center mt-5">
+         <Spinner className="sp-class" variant="warning"  animation="border" /><br/> <span className="text-white">Loading...</span> </div>}
       
     </>
   );

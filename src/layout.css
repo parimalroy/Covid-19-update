@@ -86,3 +86,12 @@ a:hover{
   color: white;
   border-bottom: #EFCB84 2px dotted;
 }
+.sp-class{
+  height: 80px;
+  width: 80px;
+  border-width: 10px;
+  border-right-color: #355B6B;
+  border-left-color:#355B6B;
+  border-top-color: white;
+
+}

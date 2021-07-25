@@ -1,28 +1,13 @@
 import React, { useEffect, useState } from "react";
 import "./../layout.css";
 import CardDisplay from "./CardDisplay";
+import { getCovidData } from './CovidData';
 const Layout = (props) => {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState(['World']);
+  const [loading, setLoading] = useState(false);
   let myFormat = Intl.NumberFormat("en-US");
-
-  const getWroldData = async () => {
-    try {
-      let response = await fetch(
-        "https://coronavirus-19-api.herokuapp.com/countries"
-      );
-      let getData = await response.json();
-      return getData.find((item) => {
-        if (item.country == "World") {
-          setData(item);
-        }
-      });
-    } catch (err) {
-      console.log(err);
-    }
-  };
-
   useEffect(() => {
-    getWroldData();
+    getCovidData(data,setData,setLoading)
   }, []);
   return (
     <>
@@ -34,50 +19,54 @@ const Layout = (props) => {
           </div>
         </div>
         <div className="row content">
+          
           <div className="col-lg-4 col-md-6 col-sm-12 col-12 left-content text-center">
             <h4>World Covid-19 Cases:</h4> <hr />
+            {loading?(
             <div className="card">
               <div className="card-header ">
                 Total Cases: 
                   <span className="text-success updateData">
-                   {myFormat.format(data.cases)}
+                   {myFormat.format(data[0].cases)}
                 </span>
               </div>
               <ul className="list-group list-group-flush">
                 <li className="list-group-item">
                   Today Case:
                   <span className="text-success updateData">
-                    {myFormat.format(data.todayCases)}
+                    {myFormat.format(data[0].todayCases)}
                   </span>
                 </li>
                 {/* <li className="list-group-item">Today Case:</li> */}
                 <li className="list-group-item">
                   Total Deaths:
                   <p className="text-danger updateData">
-                    {myFormat.format(data.deaths)}
+                    {myFormat.format(data[0].deaths)}
                   </p>
                 </li>
                 <li className="list-group-item">
                   Today Deaths:
                   <p className="text-danger updateData">
-                    {myFormat.format(data.todayDeaths)}
+                    {myFormat.format(data[0].todayDeaths)}
                   </p>
                 </li>
                 <li className="list-group-item">
                   Recovered:
                   <p className="text-success updateData">
-                    {myFormat.format(data.recovered)}
+                    {myFormat.format(data[0].recovered)}
                   </p>
                 </li>
                 <li className="list-group-item">
                   Active:
                   <span className="text-success updateData">
-                    {myFormat.format(data.active)}
+                    {myFormat.format(data[0].active)}
                   </span>
                 </li>
               </ul>
-            </div>
+             
+            </div> ):('')}
           </div>
+
           <div className="col-lg-8 col-md-6 col-sm-12 col-12  right-content text-center">
             <h4>Bangladesh Covid-19 Cases:</h4> <hr />
             <div className="row justify-content-center">
