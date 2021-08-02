@@ -14,23 +14,23 @@ const NavbarNew = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="navItem">
             <Nav.Link href="#deets" className="text-white items">
-              <NavLink exact  to='/' activeClassName="activeNav">
+              <NavLink exact  to='/covid-19-update' activeClassName="activeNav">
               Home
               </NavLink>
             </Nav.Link>
             <Nav.Link href="#memes" className="text-white items">
-              <NavLink exact  to='/asia' activeClassName="activeNav">
+              <NavLink exact  to='/covid-19-update/asia' activeClassName="activeNav">
                 Asia
               </NavLink>
               
             </Nav.Link>
             <Nav.Link href="#memes" className="text-white items">
-              <NavLink exact to ='/europe' activeClassName="activeNav">
+              <NavLink exact to ='/covid-19-update/europe' activeClassName="activeNav">
               Europe
               </NavLink>
             </Nav.Link>
             <Nav.Link href="#memes" className="text-white items">
-              <NavLink exact to ='/visualdata' activeClassName="activeNav">
+              <NavLink exact to ='/covid-19-update/visualdata' activeClassName="activeNav">
                 Chart
               </NavLink>
             </Nav.Link>

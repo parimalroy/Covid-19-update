@@ -16,13 +16,13 @@ function App() {
         <Route exact path='/'>
          <CovidData />
         </Route>
-        <Route exact path='/asia'>
+        <Route exact path='/covid-19-update/asia'>
          <Asia />
         </Route>
-        <Route exact path='/europe'>
+        <Route exact path='/covid-19-update/europe'>
          <Europe />
         </Route>
-        <Route exact path='/visualdata'>
+        <Route exact path='/covid-19-update/visualdata'>
           <VisualData />
         </Route>
         <Redirect to='/' />
